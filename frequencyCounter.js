@@ -5,6 +5,7 @@ let arr2 = [9, 100, 25, 16, 36, 25, 16, 16]
 
 //check if there are squared values of arr1 with same frequency in arr2
 let sameSquared = (a1, a2) => {
+	//quit execution if length is not the same
 	if (a1.length !== a2.length) {
 		return false
 	}
@@ -22,7 +23,7 @@ let sameSquared = (a1, a2) => {
 
 	//use for..in for objects to iterate over enumerables(keys)
 	for (let key in freqCounter1) {
-		//check if there is a squared key in arr2
+		//check if there is a squared key IN arr2
 		if (!(key ** 2 in freqCounter2)) {
 			return false
 		}

@@ -1,4 +1,5 @@
 //idea is to check if both strings have the same letters with the same FREQUENCY
+//Frequency counter solution pattern
 //ex: cinema vs iceman
 let str1 = "anagram"
 let str2 = "nagaram"
